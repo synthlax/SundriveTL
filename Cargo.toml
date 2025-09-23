@@ -1,0 +1,21 @@
+[package]
+name = "SundriveTL"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+async-trait = "0.1.89"
+atomic-id = "0.1.0"
+dotenv = "0.15.0"
+poise = "0.6.1"
+poise_macros = "0.6.1"
+serenity = { version = "0.12.4", features = [
+    "client",
+    "gateway",
+    "rustls_backend",
+    "model",
+    "collector",
+] }
+tokio = { version = "1.47.1", features = ["macros", "rt-multi-thread"] }
+uuid = { version = "1.18.0", features = ["v4"] }
+libretranslate = "0.5.1"
