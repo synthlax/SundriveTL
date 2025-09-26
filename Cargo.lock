@@ -9,11 +9,13 @@ dependencies = [
  "async-trait",
  "atomic-id",
  "dotenv",
- "libretranslate",
  "poise",
  "poise_macros",
+ "serde_json",
  "serenity",
+ "surf",
  "tokio",
+ "unic-langid",
  "uuid",
 ]
 
@@ -1453,16 +1455,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "libretranslate"
-version = "0.5.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "de81cef6bc1df8f8ce87af88460794580524679aa9c2029c2b805a062fc4b847"
-dependencies = [
- "serde_json",
- "surf",
-]
-
-[[package]]
 name = "libz-sys"
 version = "1.1.22"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2866,6 +2858,24 @@ dependencies = [
  "proc-macro2",
  "quote",
  "syn 2.0.106",
+]
+
+[[package]]
+name = "unic-langid"
+version = "0.9.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a28ba52c9b05311f4f6e62d5d9d46f094bd6e84cb8df7b3ef952748d752a7d05"
+dependencies = [
+ "unic-langid-impl",
+]
+
+[[package]]
+name = "unic-langid-impl"
+version = "0.9.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dce1bf08044d4b7a94028c93786f8566047edc11110595914de93362559bc658"
+dependencies = [
+ "tinystr",
 ]
 
 [[package]]
